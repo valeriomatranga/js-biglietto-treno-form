@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- link css -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <!-- link icon -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
+  </head>
+    <body>
+        <div class="container">
+                <h2>calcola il prezzo del tuo biglietto</h2>
+            <div class="dati_generali">
+                <form action="" class="dati_gen_top d-flex justify-content-around">
+                    <div>
+                        <span>Nome Cognome</span>
+                        <input type="text" id="passeggero"></input>
+                    </div>
+                    <div>
+                        <span>Km da percorrere</span>
+                        <input type="number" id="distanza"></input>
+                    </div>
+                    <div>
+                        <span>Fascia d'età</span>
+                        <select id="eta">
+                            <option value="minorenne">Minorenne</option>
+                            <option value="pensionato">Pensionato</option>
+                            <option value="intero">Intero</option>
+                        </select>
+                    </div>
+                </form>
+                <div class="dati_gen_bot">
+                    <button id="calcola">Genera</button>
+                    <button id="cancella">Annulla</button>
+                </div>
+            </div>
+        </div>
+
+        <h2>il tuo biglietto</h2>
+
+        <div class="container container_biglietto">
+        </div>
+
+        <script src="./assets/js/main.js"></script>
+    </body>
+</html>
